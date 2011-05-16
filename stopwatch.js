@@ -4,12 +4,13 @@ function Stopwatch(args) {
     // PRIVATE VARIABLES AND FUNCTIONS 
     // ONLY PRIVELEGED METHODS MAY VIEW/EDIT/INVOKE 
     // ***********************************************************************
-
+    this.timeSpan = new TimeSpan();
+    
     var status = 0;
 
     var timer = 0;
 
-    var initialTime = args;
+    var initialTime = this.timeSpan;
 
     var elapsedTime = new TimeSpan(0, 0, 0);
 
